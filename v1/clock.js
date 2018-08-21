@@ -3,6 +3,7 @@ var secondHand = document.querySelector(".second-hand");
 var minuteHand = document.querySelector(".min-hand");
 var hourHand = document.querySelector(".hour-hand");
 
+
 function setDate(){
 	var now= new Date();
 	var seconds = now.getSeconds();
@@ -17,9 +18,12 @@ function setDate(){
 	var hour = now.getHours();
 	var hourDegree = ((hour / 12 * 360) + 90);
 	hourHand.style.transform = `rotate(${hourDegree}deg)`;
-
-
-	var test = now.get
 }
 
 setInterval(setDate, 1000);
+const date = moment().minute();
+console.log(date);
+
+
+ 
+//https://www.youtube.com/watch?v=KRnkXgbbpzY

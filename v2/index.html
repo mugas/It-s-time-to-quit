@@ -3,9 +3,19 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Clock</title>
-	<link rel="stylesheet" type="text/css" href="clock.css">
+  <link rel="stylesheet" type="text/css" href="clock.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/locale/af.js">
+ 
 </head>
 <body>
+  <!-- Digital clock. Displays the date and number of week -->
+<div id="digital">
+  Monday, 20 August of 2018,
+  Week 25
+</div>
+
+<!-- Two analogic clocks with different time zones -->
+<div class="analogic">
 <div class="clock">
     <div class="clock-face">
       <div class="hand hour-hand"></div>
@@ -22,7 +32,10 @@
     <div class="utcHand second-utc"></div>
   </div>
 </div>
-	
+</div>
+
+<script src="https://unpkg.com/moment@2.22.2"></script> 
 <script type="text/javascript" src="clock.js"></script>
+
 </body>
 </html>
