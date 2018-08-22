@@ -15,7 +15,7 @@
     #digital{
       margin: 5px auto;
       width: 50%;
-      height: 50px;
+      height: 50%;
       border-radius: 5px;
       background-color: black;
       color:red; 
@@ -28,9 +28,7 @@
 
     .analogic{
       display:flex;
-      flex-wrap: wrap;
      
-      
     }
 
    

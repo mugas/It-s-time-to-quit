@@ -1,9 +1,18 @@
 
-//var week = document.querySelector()
+var week = document.querySelector("#digital");
+
 
 var secondHand = document.querySelector(".second-hand");
 var minuteHand = document.querySelector(".min-hand");
 var hourHand = document.querySelector(".hour-hand");
+
+function setWeek(){
+	var today = moment();
+	var todayDate = today.format("dddd, "+ "D " + "MMMM " + "Of " + "YYYY");
+	week.textContent = todayDate;
+}
+
+
 
 
 function setDate(){
@@ -23,8 +32,11 @@ function setDate(){
 }
 
 setInterval(setDate, 1000);
-const date = moment().minute();
-console.log(date);
+setInterval(setWeek, 1000);
+
+setWeek();
+
+
 
 
  
