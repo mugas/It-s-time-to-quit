@@ -1,3 +1,6 @@
+//problems:
+//the center of the clock is not center
+
 
 var week = document.querySelector("#digital");
 
