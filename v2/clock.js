@@ -1,4 +1,4 @@
-//problems:
+ //problems:
 //the center of the clock is not center
 
 
@@ -40,7 +40,7 @@ setInterval(setWeek, 1000);
 setWeek();
 
 
-
+ 
 
  
 //https://www.youtube.com/watch?v=KRnkXgbbpzY

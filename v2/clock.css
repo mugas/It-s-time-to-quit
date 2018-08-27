@@ -1,9 +1,5 @@
 
-    :root{
-      --position-pointer:absolute;
-      --top-position:50%;
-    }
-    
+  
     html {
       background:#018DED url(https://images.unsplash.com/photo-1503365113766-4a362681eac5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=79cf794378a008ab1d74b8e612d72ad0&auto=format&fit=crop&w=750&q=80);
       background-size:cover;
@@ -14,6 +10,7 @@
       font-size: 2rem;
       min-height: 100vh;
       align-items: center;
+      
     }
     
     /* Digital Data */
@@ -34,10 +31,10 @@
 
     /*Analogic Clock */
 
-    .analogic{
+    /*  .analogic{
       display:flex;
       flex-wrap: wrap;
-    }
+    }  */
 
 
     .clock-1 {
@@ -68,67 +65,119 @@
       transform: translateY(-3px); /* account for the height of the clock hands */
     }  
 
-     .hour-hand {
-      background: yellow;
-      height: 20%;
-      left: 48.75%;
+     .hour-hand{
+      width:34%;
+      height:8px;
+      background:yellow;
       position: absolute;
-      top: 30%;
-      transform-origin: 50% 100%;
+      top:49%;
+      right:65%;
+      left:16%;
+      transform-origin: 100%;
       transform: rotate(90deg);
-	    transition: all 0.05s;
-	    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
-      width: 2.5%;
-    } 
-
-     /* .hour-hand {
-      width:50%;
-      height:6px;
-      background:red;
-      position: var(--position-pointer);
-	    top:var(--top-position);
-	    transform-origin: 100%; muda o eixo que roda 
-	     transform: rotate(90deg);
-	    transition: all 0.05s;
-	    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1) 
-    } 
-     */
-    /* .min-hand {
-      background: red;
-      height: 40%;
-      left: 49%;
-      position: absolute;
-      top: 10%;
-      transform-origin: 50% 100%;
-      width: 2%;
       
-    } */
+     }
 
-    .min-hand {
+      .min-hand{
       width:50%;
       height:6px;
-      background:red;
-      position: var(--position-pointer);
-	    top:var(--top-position);
-	    transform-origin: 100%; /* muda o eixo que roda */
-	    transform: rotate(90deg);
-	    transition: all 0.05s;
-	    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
-    }
-    
-    .second-hand {
-      background: #000;
-      height: 45%;
-      left: 49.5%;
+      background:black;
       position: absolute;
-      top: 14%;
-      transform-origin: 50% 80%;
+      top:50%;
+      transform-origin: 100%;
       transform: rotate(90deg);
-	    transition: all 0.05s;
-	    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
-      width: 1%;
-      z-index: 8;
     }
+
+    .second-hand{
+      width:60%;
+      height:5px;
+      background:red;
+      position: absolute;
+      top:49%;
+      left:2%;
+      transform-origin: 80%;
+      transform: rotate(90deg);
+    } 
+
+    .clock-1 ul{
+      list-style: none;
+      padding: 0;
+  }
+
+  .clock-1 ul li{
+    position: absolute;
+    width:40%;
+    height:40%;
+    text-align: center;
+    line-height: 20px;
+    font-size: 10px;
+    color:red;
+}
+
+.clock-1 ul li:nth-child(1){
+  right: 22%;
+  top:6.5%;
+}
+.clock-1 ul li:nth-child(2){
+  right: 6%;
+  top:25%;
+}
+.clock-1 ul li:nth-child(3){
+  right: 1%;
+  top:calc(50% - 10px);
+  left:80%;
+  color:#000;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.clock-1 ul li:nth-child(4){
+  right: 6%;
+  top:69%;
+}
+.clock-1 ul li:nth-child(5){
+  right: 22%;
+  top:84%;
+}
+.clock-1 ul li:nth-child(6){
+  right: calc(50% - 10px);
+  top:calc(99% - 20px);
+  right:30%;
+  color:#000;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.clock-1 ul li:nth-child(7){
+  left: 22%;
+  top:84%;
+}
+.clock-1 ul li:nth-child(8){
+  left:6%;
+  top:69%;
+}
+.clock-1 ul li:nth-child(9){
+  right: 80%;
+  top:calc(50% - 10px);
+  color:#000;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.clock-1 ul li:nth-child(10){
+  font-size: 1.5rem;
+  right: 72%;
+  top:11%;
+}
+.clock-1 ul li:nth-child(11){
+  left: 22%;
+  top:6.5%;
+}
+.clock-1 ul li:nth-child(12){
+  right: calc(50% - 10px);
+  top:-10%;
+  left:30%;
+  color:#000;
+  font-size: 2rem;
+  font-weight: bold;
+}
 
     .utc {
       width: 30rem;
