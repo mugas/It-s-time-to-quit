@@ -115,12 +115,14 @@
 }
 
 .clock-1 ul li:nth-child(1){
-  right: 22%;
-  top:6.5%;
+  left: 56%;
+  bottom:64.5%;
+  font-size: 1.5rem;  
 }
 .clock-1 ul li:nth-child(2){
-  right: 6%;
-  top:25%;
+  left: 76%;
+  top:15%;
+  font-size: 1.5rem;  
 }
 .clock-1 ul li:nth-child(3){
   right: 1%;
@@ -133,26 +135,30 @@
 .clock-1 ul li:nth-child(4){
   right: 6%;
   top:69%;
+  font-size: 1.5rem;  
 }
 .clock-1 ul li:nth-child(5){
   right: 22%;
   top:84%;
+  font-size: 1.5rem;  
 }
 .clock-1 ul li:nth-child(6){
-  right: calc(50% - 10px);
   top:calc(99% - 20px);
   right:30%;
   color:#000;
   font-size: 2rem;
   font-weight: bold;
+   
 }
 .clock-1 ul li:nth-child(7){
   left: 22%;
   top:84%;
+  font-size: 1.5rem;  
 }
 .clock-1 ul li:nth-child(8){
   left:6%;
   top:69%;
+  font-size: 1.5rem;  
 }
 .clock-1 ul li:nth-child(9){
   right: 80%;
@@ -169,10 +175,11 @@
 .clock-1 ul li:nth-child(11){
   left: 22%;
   top:6.5%;
+   font-size: 1.5rem;     
 }
 .clock-1 ul li:nth-child(12){
   right: calc(50% - 10px);
-  top:-10%;
+  bottom:70%;
   left:30%;
   color:#000;
   font-size: 2rem;
