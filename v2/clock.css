@@ -40,10 +40,11 @@
     .clock-1 {
       width: 30rem;
       height: 30rem; 
-      border:20px solid white;
+      border:15px solid black;
       border-radius:50%;
       padding:2rem;
-      background-color: burlywood;
+      background-color: white;
+      
   }
   
     .center{
@@ -58,12 +59,15 @@
     }
     
 	
-     .clock-face {
+      .clock-face {
       position: relative;
       width: 100%;
       height: 100%;
       transform: translateY(-3px); /* account for the height of the clock hands */
-    }  
+    }   
+
+
+      /* Style of the hands of the first clock-1 */
 
      .hour-hand{
       width:34%;
@@ -133,13 +137,13 @@
   font-weight: bold;
 }
 .clock-1 ul li:nth-child(4){
-  right: 6%;
-  top:69%;
+  left: 72%;
+  top:75%;
   font-size: 1.5rem;  
 }
 .clock-1 ul li:nth-child(5){
-  right: 22%;
-  top:84%;
+  left: 53%;
+  top:90%;
   font-size: 1.5rem;  
 }
 .clock-1 ul li:nth-child(6){
@@ -151,13 +155,13 @@
    
 }
 .clock-1 ul li:nth-child(7){
-  left: 22%;
-  top:84%;
+  right: 54%;
+  top:90%;
   font-size: 1.5rem;  
 }
 .clock-1 ul li:nth-child(8){
-  left:6%;
-  top:69%;
+  left:-10%;
+  top:75%;
   font-size: 1.5rem;  
 }
 .clock-1 ul li:nth-child(9){
@@ -169,12 +173,12 @@
 }
 .clock-1 ul li:nth-child(10){
   font-size: 1.5rem;
-  right: 72%;
-  top:11%;
+  right: 76%;
+  top:15%;
 }
 .clock-1 ul li:nth-child(11){
-  left: 22%;
-  top:6.5%;
+  left: 4%;
+  top:-4.5%;
    font-size: 1.5rem;     
 }
 .clock-1 ul li:nth-child(12){
@@ -208,3 +212,10 @@
       font-family:digital-7;
       src: url(fonts/digital-7.ttf);
     }
+
+    .container{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-gap: 2px;
+    }
+
