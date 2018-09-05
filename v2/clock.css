@@ -1,6 +1,6 @@
 
   
-    html {
+html {
       background:#018DED url(https://images.unsplash.com/photo-1503365113766-4a362681eac5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=79cf794378a008ab1d74b8e612d72ad0&auto=format&fit=crop&w=750&q=80);
       background-size:cover;
     }
@@ -29,13 +29,12 @@
       
     }
 
-    /*Analogic Clock */
-
-    /*  .analogic{
-      display:flex;
-      flex-wrap: wrap;
-    }  */
-
+   /*Grid*/
+   .container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2px;
+  }
 
     .clock-1 {
       width: 30rem;
@@ -59,7 +58,7 @@
     }
     
 	
-      .clock-face {
+      .clock-1-face {
       position: relative;
       width: 100%;
       height: 100%;
@@ -190,32 +189,120 @@
   font-weight: bold;
 }
 
-    .utc {
+
+
+    .clock-2{
       width: 30rem;
-      height: 30rem;
-      border:20px solid white;
+      height: 30rem; 
+      border:15px solid black;
       border-radius:50%;
-      margin-top: 5px;
-      /*  margin: 25px auto; 
-      position: relative;
-  top: 10px; right: 65px; */
       padding:2rem;
-      box-shadow:
-        0 0 0 4px rgba(0,0,0,0.1),
-        inset 0 0 0 3px #EFEFEF,
-        inset 0 0 10px black,
-        0 0 10px rgba(0,0,0,0.2);
-      }
+      background: linear-gradient(271deg, #dbd709, #0c0b0d);
+      background-size: 400% 400%;
+      -webkit-animation: firstAnimation 30s ease infinite;
+      -moz-animation: secondAnimation 30s ease infinite;
+      animation: thirdAnimation 30s ease infinite;
+    }
+    
+
+
+
+  .clock-2 ul{
+    list-style: none;
+    padding: 0;
+}
+
+.clock-2 ul li{
+  position: absolute;
+  width:40%;
+  height:40%;
+  text-align: center;
+  line-height: 20px;
+  font-size: 10px;
+  color:red;
+}
+
+.clock-2 ul li:nth-child(1){
+  left: 52%;
+  bottom:37.5%;
+  font-size: 1.5rem;  
+}
+.clock-2 ul li:nth-child(2){
+  left: 69%;
+  top:98%;
+  font-size: 1.5rem;  
+}
+.clock-2 ul li:nth-child(3){
+  left: 52%;
+  top:172%;
+  font-size: 1.5rem;  
+}
+.clock-2 ul li:nth-child(4){
+  left: 33%;
+  top:98%;
+  font-size: 1.5rem;  
+}
+  
+  .hour-hand1{
+    width:12%;
+    height:2%;
+    background:red;
+    position: absolute;
+    top:100%;
+    left:61%;
+    transform-origin: 100%;
+    transform: rotate(360deg);
+    
+   }
+
+   .min-hand1{
+    width:15%;
+    height:2%;
+    background:blue;
+    position: absolute;
+    top:100%;
+    left:58%;
+    transform-origin: 100%;
+    transform: rotate(360deg);
+    
+   }
+
+   .second-hand1{
+    width:19%;
+    height:2%;
+    background:cadetblue;
+    position: absolute;
+    top:100%;
+    left:54%;
+    transform-origin: 100%;
+    transform: rotate(360deg);
+    
+   }
   
 
-    @font-face{
+   
+
+    
+      @font-face{
       font-family:digital-7;
       src: url(fonts/digital-7.ttf);
     }
 
-    .container{
-      display: grid;
-      grid-template-columns: repeat(2,1fr);
-      grid-gap: 2px;
+    @-webkit-keyframes firstAnimation {
+      0%{background-position:0% 33%}
+      50%{background-position:100% 68%}
+      100%{background-position:0% 33%}
     }
+    @-moz-keyframes secondAnimation {
+      0%{background-position:0% 33%}
+      50%{background-position:100% 68%}
+      100%{background-position:0% 33%}
+    }
+    @keyframes thirdAnimation { 
+      0%{background-position:0% 33%}
+      50%{background-position:100% 68%}
+      100%{background-position:0% 33%}
+    }
+         
 
+  
