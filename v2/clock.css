@@ -223,23 +223,23 @@ html {
 }
 
 .clock-2 ul li:nth-child(1){
-  left: 52%;
-  bottom:37.5%;
+  left: 51%;
+  bottom:46.5%;
   font-size: 1.5rem;  
 }
 .clock-2 ul li:nth-child(2){
   left: 69%;
-  top:98%;
+  top:58%;
   font-size: 1.5rem;  
 }
 .clock-2 ul li:nth-child(3){
   left: 52%;
-  top:172%;
+  top:95%;
   font-size: 1.5rem;  
 }
 .clock-2 ul li:nth-child(4){
   left: 33%;
-  top:98%;
+  top:58%;
   font-size: 1.5rem;  
 }
   
@@ -248,8 +248,8 @@ html {
     height:2%;
     background:red;
     position: absolute;
-    top:100%;
-    left:61%;
+    top:59%;
+    left:58%;
     transform-origin: 100%;
     transform: rotate(360deg);
     
@@ -260,8 +260,8 @@ html {
     height:2%;
     background:blue;
     position: absolute;
-    top:100%;
-    left:58%;
+    top:59%;
+    left:55%;
     transform-origin: 100%;
     transform: rotate(360deg);
     
@@ -272,8 +272,8 @@ html {
     height:2%;
     background:cadetblue;
     position: absolute;
-    top:100%;
-    left:54%;
+    top:59%;
+    left:52%;
     transform-origin: 100%;
     transform: rotate(360deg);
     
