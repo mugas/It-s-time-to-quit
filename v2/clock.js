@@ -1,24 +1,21 @@
- //problems:
-//the center of the clock is not center
-
 
 var week = document.querySelector("#digital");
-
-
 var secondHand = document.querySelector(".second-hand");
 var minuteHand = document.querySelector(".min-hand");
 var hourHand = document.querySelector(".hour-hand");
+var hourHand1 = document.querySelector(".hour-hand1");
+
+//Setting the week
 
 function setWeek(){
 	var today = moment();
 	var todayDate = today.format("dddd, "+ "D " + "MMMM " + "Of " + "YYYY");
 	week.textContent = todayDate;
 }
+setWeek();
 
 
-
-
-function setDate(){
+function setDateClock(){
 	var now= new Date();
 	var seconds = now.getSeconds();
 	var secondsDegree = ((seconds / 60) * 360) + 90;
@@ -34,10 +31,17 @@ function setDate(){
 	hourHand.style.transform = `rotate(${hourDegree}deg)`;
 }
 
-setInterval(setDate, 1000);
+// function setDateClock1(){
+// 	var now = moment()
+// 	var hour = ((now.hour() / 12 * 360)+90);
+// 	hourHand1.style.transform = `rotate(${hour}deg)`;
+// } 
+
+//setInterval(setDateClock1,1000);
+setInterval(setDateClock, 1000);
 setInterval(setWeek, 1000);
 
-setWeek();
+
 
 
  
