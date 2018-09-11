@@ -1,0 +1,272 @@
+
+  
+html {
+      background:#018DED url(https://images.unsplash.com/photo-1503365113766-4a362681eac5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=79cf794378a008ab1d74b8e612d72ad0&auto=format&fit=crop&w=750&q=80);
+      background-size:cover;
+    }
+
+    body {
+      margin: 0;
+      font-size: 2rem;
+      min-height: 100vh;
+      align-items: center;
+      
+    }
+    
+    /* Digital Data */
+    
+    #digitalDate{
+      margin: 5px auto;
+      width: 50%;
+      height: 50%;
+      border-radius: 5px;
+      background-color: black;
+      color:red; 
+      text-align: center;
+      padding-top: 10px;
+      font-family: digital-7;
+      font-size: 100%;
+      
+    }
+
+   /*Grid*/
+   .container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2px;
+  }
+
+    .clock-1 {
+      width: 30rem;
+      height: 30rem; 
+      border:15px solid black;
+      border-radius:50%;
+      padding:2rem;
+      background-color: white;
+      
+  }
+  
+    .center{
+      background-color: #000;
+      position: absolute;
+      left: calc(50% - 10px);
+      top:  calc(50% - 10px);
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      z-index: 20;
+    }
+    
+	
+      .clock-1-face {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transform: translateY(-3px); /* account for the height of the clock hands */
+    }   
+
+
+      /* Style of the hands of the first clock-1 */
+
+     .hour-hand{
+      width:34%;
+      height:8px;
+      background:yellow;
+      position: absolute;
+      top:49%;
+      right:65%;
+      left:16%;
+      transform-origin: 100%;
+      transform: rotate(90deg);
+      
+     }
+
+      .min-hand{
+      width:50%;
+      height:6px;
+      background:black;
+      position: absolute;
+      top:50%;
+      transform-origin: 100%;
+      transform: rotate(90deg);
+    }
+
+    .second-hand{
+      width:60%;
+      height:5px;
+      background:red;
+      position: absolute;
+      top:49%;
+      left:2%;
+      transform-origin: 80%;
+      transform: rotate(90deg);
+    } 
+
+    .clock-1 ul{
+      list-style: none;
+      padding: 0;
+  }
+
+  .clock-1 ul li{
+    position: absolute;
+    width:40%;
+    height:40%;
+    text-align: center;
+    line-height: 20px;
+    font-size: 10px;
+    color:red;
+}
+
+.clock-1 ul li:nth-child(1){
+  left: 56%;
+  bottom:64.5%;
+  font-size: 1.5rem;  
+}
+.clock-1 ul li:nth-child(2){
+  left: 76%;
+  top:15%;
+  font-size: 1.5rem;  
+}
+.clock-1 ul li:nth-child(3){
+  right: 1%;
+  top:calc(50% - 10px);
+  left:80%;
+  color:#000;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.clock-1 ul li:nth-child(4){
+  left: 72%;
+  top:75%;
+  font-size: 1.5rem;  
+}
+.clock-1 ul li:nth-child(5){
+  left: 53%;
+  top:90%;
+  font-size: 1.5rem;  
+}
+.clock-1 ul li:nth-child(6){
+  top:calc(99% - 20px);
+  right:30%;
+  color:#000;
+  font-size: 2rem;
+  font-weight: bold;
+   
+}
+.clock-1 ul li:nth-child(7){
+  right: 54%;
+  top:90%;
+  font-size: 1.5rem;  
+}
+.clock-1 ul li:nth-child(8){
+  left:-10%;
+  top:75%;
+  font-size: 1.5rem;  
+}
+.clock-1 ul li:nth-child(9){
+  right: 80%;
+  top:calc(50% - 10px);
+  color:#000;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.clock-1 ul li:nth-child(10){
+  font-size: 1.5rem;
+  right: 76%;
+  top:15%;
+}
+.clock-1 ul li:nth-child(11){
+  left: 4%;
+  top:-4.5%;
+   font-size: 1.5rem;     
+}
+.clock-1 ul li:nth-child(12){
+  right: calc(50% - 10px);
+  bottom:70%;
+  left:30%;
+  color:#000;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+
+/*Second Clock*/
+ 
+.clock-2 {
+  width: 30rem;
+  height: 30rem; 
+  border:15px solid black;
+  border-radius:50%;
+  padding:2rem;
+  background: linear-gradient(271deg, #dbd709, #0c0b0d);
+  background-size: 400% 400%;
+  -webkit-animation: firstAnimation 10s ease infinite;
+  -moz-animation: secondAnimation 10s ease infinite;
+  animation: thirdAnimation 10s ease infinite;
+  }
+  
+    .center{
+      background-color: #000;
+      position: absolute;
+      left: calc(50% - 10px);
+      top:  calc(50% - 10px);
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      z-index: 20;
+    }
+    
+	
+      .clock-2-face {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transform: translateY(-3px); /* account for the height of the clock hands */
+    }   
+
+
+      
+.digitalClock{
+  color:red;
+  text-align: center;
+  font-size: 125%;
+}
+
+
+
+@font-face{
+  font-family:digital-7;
+  src: url(fonts/digital-7.ttf);
+}
+
+
+/*Animations*/
+
+@-webkit-keyframes firstAnimation {
+  0%{background-position:0% 33%}
+  50%{background-position:100% 68%}
+  100%{background-position:0% 33%}
+}
+@-moz-keyframes secondAnimation {
+  0%{background-position:0% 33%}
+  50%{background-position:100% 68%}
+  100%{background-position:0% 33%}
+}
+@keyframes thirdAnimation { 
+  0%{background-position:0% 33%}
+  50%{background-position:100% 68%}
+  100%{background-position:0% 33%}
+}
+     
+.center1{
+  background-color: #fff;
+  position: absolute;
+  left:20%;
+  top:42%;
+  width: 281px;
+  height: 46px;
+  padding: 5px;
+  border: 1px solid #fff8dc;
+  display: block;
+  box-shadow: inset 0px 2px 5px 
+}
