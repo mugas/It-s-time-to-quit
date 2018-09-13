@@ -21,12 +21,21 @@ html {
       height: 50%;
       border-radius: 5px;
       background-color: black;
-      color:red; 
+      color: white;
       text-align: center;
       padding-top: 10px;
       font-family: digital-7;
       font-size: 100%;
       
+    }
+    
+   
+
+    .timeZone{
+      color:red; 
+      text-align: center;
+      text-align: center;
+     
     }
 
    /*Grid*/

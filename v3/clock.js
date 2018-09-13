@@ -1,5 +1,6 @@
 
 var week = document.querySelector("#digitalDate");
+var timings = document.querySelector("p span");
 var secondHand = document.querySelector(".second-hand");
 var minuteHand = document.querySelector(".min-hand");
 var hourHand = document.querySelector(".hour-hand");
@@ -7,6 +8,7 @@ var hourDigital = document.querySelector(".hour");
 var minuteDigital = document.querySelector(".minute");
 var secondDigital = document.querySelector(".second");
 var milisecondDigital = document.querySelector(".milisecond");
+
 
 
 //Setting the week
@@ -17,6 +19,14 @@ function setWeek(){
 	week.textContent = todayDate;
 }
 setWeek();
+
+function timeZone(){
+var teste = moment.tz.guess();
+console.log(teste);
+timings.textContent = teste;
+}
+
+timeZone();
 
 
 function analogClock(){
