@@ -5,17 +5,16 @@ html {
       background-size:cover;
     }
 
-    body {
+body {
       margin: 0;
       font-size: 2rem;
       min-height: 100vh;
       align-items: center;
-      
     }
     
     /* Digital Data */
     
-    #digitalDate{
+    #digital-date{
       margin: 5px auto;
       width: 50%;
       height: 50%;
@@ -30,7 +29,7 @@ html {
     }
     
    
-
+/*Time Zone*/
     .timeZone{
       color:red; 
       text-align: center;
@@ -40,18 +39,32 @@ html {
 
    /*Grid*/
    .container{
-    display: grid;
+    /*  display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-gap: 2px;
+    grid-gap: 2px;  */
+    
+  /*   display: flex;
+    flex-wrap: nowrap; */
   }
 
-    .clock-1 {
-      width: 30rem;
-      height: 30rem; 
+  /*Analogic Clock*/
+    .clock{
+      /* width: 30rem;
+      height: 30rem;  */
       border:15px solid black;
-      border-radius:50%;
-      padding:2rem;
-      background-color: white;
+      border-radius:50%; 
+      /* padding:2rem; */
+      background-color: white; 
+
+      margin: 20px auto 0 auto;
+      position: relative;
+      display: flex;
+      flex-wrap: nowrap;
+      width: 500px;
+      height: 500px;
+      justify-content: center;
+
+  
       
   }
   
@@ -67,16 +80,12 @@ html {
     }
     
 	
-      .clock-1-face {
+      .clock-face {
       position: relative;
       width: 100%;
       height: 100%;
       transform: translateY(-3px); /* account for the height of the clock hands */
     }   
-
-
-      /* Style of the hands of the first clock-1 */
-
      .hour-hand{
       width:34%;
       height:8px;
@@ -111,12 +120,12 @@ html {
       transform: rotate(90deg);
     } 
 
-    .clock-1 ul{
+    .clock ul{
       list-style: none;
       padding: 0;
   }
 
-  .clock-1 ul li{
+  .clock ul li{
     position: absolute;
     width:40%;
     height:40%;
@@ -126,17 +135,17 @@ html {
     color:red;
 }
 
-.clock-1 ul li:nth-child(1){
+.clock ul li:nth-child(1){
   left: 56%;
   bottom:64.5%;
   font-size: 1.5rem;  
 }
-.clock-1 ul li:nth-child(2){
+.clock ul li:nth-child(2){
   left: 76%;
   top:15%;
   font-size: 1.5rem;  
 }
-.clock-1 ul li:nth-child(3){
+.clock ul li:nth-child(3){
   right: 1%;
   top:calc(50% - 10px);
   left:80%;
@@ -144,17 +153,17 @@ html {
   font-size: 2rem;
   font-weight: bold;
 }
-.clock-1 ul li:nth-child(4){
+.clock ul li:nth-child(4){
   left: 72%;
   top:75%;
   font-size: 1.5rem;  
 }
-.clock-1 ul li:nth-child(5){
+.clock ul li:nth-child(5){
   left: 53%;
   top:90%;
   font-size: 1.5rem;  
 }
-.clock-1 ul li:nth-child(6){
+.clock ul li:nth-child(6){
   top:calc(99% - 20px);
   right:30%;
   color:#000;
@@ -162,34 +171,34 @@ html {
   font-weight: bold;
    
 }
-.clock-1 ul li:nth-child(7){
+.clock ul li:nth-child(7){
   right: 54%;
   top:90%;
   font-size: 1.5rem;  
 }
-.clock-1 ul li:nth-child(8){
+.clock ul li:nth-child(8){
   left:-10%;
   top:75%;
   font-size: 1.5rem;  
 }
-.clock-1 ul li:nth-child(9){
+.clock ul li:nth-child(9){
   right: 80%;
   top:calc(50% - 10px);
   color:#000;
   font-size: 2rem;
   font-weight: bold;
 }
-.clock-1 ul li:nth-child(10){
+.clock ul li:nth-child(10){
   font-size: 1.5rem;
   right: 76%;
   top:15%;
 }
-.clock-1 ul li:nth-child(11){
+.clock ul li:nth-child(11){
   left: 4%;
   top:-4.5%;
    font-size: 1.5rem;     
 }
-.clock-1 ul li:nth-child(12){
+.clock ul li:nth-child(12){
   right: calc(50% - 10px);
   bottom:70%;
   left:30%;
@@ -198,22 +207,6 @@ html {
   font-weight: bold;
 }
 
-
-/*Second Clock*/
- 
-.clock-2 {
-  width: 30rem;
-  height: 30rem; 
-  border:15px solid black;
-  border-radius:50%;
-  padding:2rem;
-  background: linear-gradient(271deg, #dbd709, #0c0b0d);
-  background-size: 400% 400%;
-  -webkit-animation: firstAnimation 10s ease infinite;
-  -moz-animation: secondAnimation 10s ease infinite;
-  animation: thirdAnimation 10s ease infinite;
-  }
-  
     .center{
       background-color: #000;
       position: absolute;
@@ -225,49 +218,14 @@ html {
       z-index: 20;
     }
     
-	
-      .clock-2-face {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      transform: translateY(-3px); /* account for the height of the clock hands */
-    }   
 
 
-      
-.digitalClock{
+/*Digital Clock*/
+
+.digital-clock{
   color:red;
   text-align: center;
   font-size: 125%;
-}
-
-
-
-@font-face{
-  font-family:digital-7;
-  src: url(fonts/digital-7.ttf);
-}
-
-
-/*Animations*/
-
-@-webkit-keyframes firstAnimation {
-  0%{background-position:0% 33%}
-  50%{background-position:100% 68%}
-  100%{background-position:0% 33%}
-}
-@-moz-keyframes secondAnimation {
-  0%{background-position:0% 33%}
-  50%{background-position:100% 68%}
-  100%{background-position:0% 33%}
-}
-@keyframes thirdAnimation { 
-  0%{background-position:0% 33%}
-  50%{background-position:100% 68%}
-  100%{background-position:0% 33%}
-}
-     
-.center1{
   background-color: #fff;
   position: absolute;
   left:20%;
@@ -279,3 +237,15 @@ html {
   display: block;
   box-shadow: inset 0px 2px 5px 
 }
+
+
+
+@font-face{
+  font-family:digital-7;
+  src: url(fonts/digital-7.ttf);
+}
+
+
+
+     
+

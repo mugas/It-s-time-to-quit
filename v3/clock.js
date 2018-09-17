@@ -1,5 +1,5 @@
 
-var week = document.querySelector("#digitalDate");
+var week = document.querySelector("#digital-date");
 var timings = document.querySelector("p span");
 var secondHand = document.querySelector(".second-hand");
 var minuteHand = document.querySelector(".min-hand");
@@ -7,7 +7,6 @@ var hourHand = document.querySelector(".hour-hand");
 var hourDigital = document.querySelector(".hour");
 var minuteDigital = document.querySelector(".minute");
 var secondDigital = document.querySelector(".second");
-var milisecondDigital = document.querySelector(".milisecond");
 
 
 
@@ -51,11 +50,9 @@ function digitalClock(){
 	var hour = now.format("HH");
 	var minute = now.format("mm");
 	var second = now.format("ss");
-	var milisecond = moment().millisecond();
 	hourDigital.textContent = hour;
 	minuteDigital.textContent = minute;
 	secondDigital.textContent = second;
-	milisecondDigital.textContent = milisecond;
 }
 
 
