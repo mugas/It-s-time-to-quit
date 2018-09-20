@@ -7,7 +7,9 @@ var hourHand = document.querySelector(".hour-hand");
 var hourDigital = document.querySelector(".hour");
 var minuteDigital = document.querySelector(".minute");
 var secondDigital = document.querySelector(".second");
+var background = document.getElementsByTagName("body");
 
+var hour;
 
 
 //Setting the week
@@ -47,7 +49,7 @@ function analogClock(){
 function digitalClock(){
 	var timezone = moment.tz.guess();
 	var now = moment();
-	var hour = now.format("HH");
+	 hour = now.format("HH");
 	var minute = now.format("mm");
 	var second = now.format("ss");
 	hourDigital.textContent = hour;
@@ -55,10 +57,16 @@ function digitalClock(){
 	secondDigital.textContent = second;
 }
 
+ function changeBackground(){
+	if(hour >06 && hour < 18 ){
+		document.body.classList.add("day");
+	} else {
+		document.body.classList.add("night");
+	}
+} 
 
 
-
-
+changeBackground();
 setInterval(analogClock, 1000);
 setInterval(setWeek, 1000);
 setInterval(digitalClock, 1000);

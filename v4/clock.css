@@ -1,16 +1,15 @@
 
   
-html {
-      background:#018DED url(https://images.unsplash.com/photo-1503365113766-4a362681eac5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=79cf794378a008ab1d74b8e612d72ad0&auto=format&fit=crop&w=750&q=80);
+ html {
+     /* background:#018DED url(https://images.unsplash.com/photo-1503365113766-4a362681eac5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=79cf794378a008ab1d74b8e612d72ad0&auto=format&fit=crop&w=750&q=80);*/
       background-size:cover;
-    }
+    } 
 
 body {
       margin: 0;
       font-size: 2rem;
-      /*
-      min-height: 100vh;
-      align-items: center; */
+      
+
     }
     
     /* Digital Data */
@@ -27,26 +26,36 @@ body {
       font-family: digital-7;
       font-size: 100%;
       
-    }
+    } 
     
    
 /*Time Zone*/
     .timeZone{
-      color:red; 
-      /* text-align: center; */
-     
-     
+      color:black; 
+      position: absolute;
+      top: 13.5%;
+    left: 36.5%;
+    font-style: italic;
+    font-size: 1rem;
+    line-height: 100px;
     }
 
+    #city{
+color:red;
+font-size: 1.5rem;
+
+    }
   /*Analogic Clock*/
     .clock{
       border:15px solid black;
       width: 500px;
       height: 500px;
       border-radius: 50%;
-      background-color: antiquewhite;
+      background-color: burlywood;
       margin: 10px auto 0px auto;
-      position: relative;      
+      position: relative;     
+      align-items: center;
+     
   }
   
     .center{
@@ -130,8 +139,8 @@ body {
   font-weight: bold;
 }
 .clock ul li:nth-child(4){
-  right: 10%;
-  top:75%;
+  right: 7%;
+  top:71%;
   font-size: 1.5rem;  
 }
 .clock ul li:nth-child(5){
@@ -148,13 +157,13 @@ body {
    
 }
 .clock ul li:nth-child(7){
-  right: 54%;
+  left: 25%;
   top:90%;
   font-size: 1.5rem;  
 }
 .clock ul li:nth-child(8){
-  left:-10%;
-  top:75%;
+  left:7%;
+  top:71%;
   font-size: 1.5rem;  
 }
 .clock ul li:nth-child(9){
@@ -166,16 +175,16 @@ body {
 }
 .clock ul li:nth-child(10){
   font-size: 1.5rem;
-  right: 76%;
-  top:15%;
+  left: 6%;
+  top:25%;
 }
 .clock ul li:nth-child(11){
-  left: 4%;
-  top:-4.5%;
+  left: 22%;
+  top:7.5%;
    font-size: 1.5rem;     
 }
 .clock ul li:nth-child(12){
-  right: calc(50% - 10px);
+  right: calc(53% - 10px);
   top:1%;
   color:#000;
   font-size: 2rem;
@@ -213,6 +222,13 @@ body {
     height: 35px;
 }
 
+.night{
+  background: url("https://images.unsplash.com/photo-1536746803623-cef87080bfc8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e6627c9716507abba4d778e9ef373f75&auto=format&fit=crop&w=1532&q=80");
+}
+
+.day{
+  background: url("https://images.unsplash.com/photo-1533579729827-fe37e76ea92b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a039ec60196ef8d7a7c2ab4d98b5e6ed&auto=format&fit=crop&w=1500&q=80");
+}
 
 
 @font-face{
