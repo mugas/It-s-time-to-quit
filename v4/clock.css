@@ -3,9 +3,10 @@
 }
 
 html {
-  background: url("https://images.unsplash.com/photo-1533603905650-c873cb508859?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9b7875cce5293665eab9687b9e5100f6&auto=format&fit=crop&w=750&q=80")
+  background: url("https://images.unsplash.com/photo-1527099908998-5b73a5fe2a0d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=fc1be99cb7660fbb8704743276521c7a&auto=format&fit=crop&w=755&q=80")
     no-repeat center center fixed;
   background-size: cover;
+  overflow: hidden;
 }
 
 body {
@@ -46,6 +47,7 @@ body {
   height: 500px;
   border-radius: 50%;
   background-color: white;
+  opacity: 0.5;
   margin: 10px auto 0px auto;
   position: relative;
   align-items: center;
