@@ -1,47 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Clock</title>
+  <meta charset="UTF-8">
+  <title>Swiwing Clock</title>
   <link rel="stylesheet" type="text/css" href="clock.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/locale/af.js">
- 
 </head>
+
 <body>
 
 
 
- <div class="clock">
-  <div class="hand hour-hand"></div>
-  <div class="hand min-hand"></div>
-  <div class="hand second-hand"></div>
-  <div class="center"></div>
-  <div class="digital-clock">
-    <span class="hour">00</span> :
-    <span class="minute">00</span> :
-    <span class="second">00</span>
-    <span id="digital-date">Monday, 20 August of 2018</span>
+  <div class="clock">
+    <div class="hand hour-hand"></div>
+    <div class="hand min-hand"></div>
+    <div class="hand second-hand"></div>
+    <div class="center"></div>
+    <div class="digital-clock">
+      <span class="hour">00</span> :
+      <span class="minute">00</span> :
+      <span class="second">00</span>
+      <span id="digital-date">Monday, 20 August of 2018</span>
+    </div>
+    <div class="timeZone">Time Zone:<span id="city">Helsinki</span></div>
+    <ul>
+      <li><span>1</span></li>
+      <li><span>2</span></li>
+      <li><span>3</span></li>
+      <li><span>4</span></li>
+      <li><span>5</span></li>
+      <li><span>6</span></li>
+      <li><span>7</span></li>
+      <li><span>8</span></li>
+      <li><span>9</span></li>
+      <li><span>10</span></li>
+      <li><span>11</span></li>
+      <li><span>12</span></li>
+    </ul>
   </div>
-  <div class="timeZone">Time Zone:<span id="city">Helsinki</span></div>
-  <ul>
-    <li><span>1</span></li>
-    <li><span>2</span></li>
-    <li><span>3</span></li>
-    <li><span>4</span></li>
-    <li><span>5</span></li>
-    <li><span>6</span></li>
-    <li><span>7</span></li>
-    <li><span>8</span></li>
-    <li><span>9</span></li>
-    <li><span>10</span></li>
-    <li><span>11</span></li>
-    <li><span>12</span></li>
-  </ul>
- </div>
 
-<script src="https://unpkg.com/moment@2.22.2"></script> 
-<script src="https://momentjs.com/downloads/moment-timezone-with-data.min.js"></script>
-<script type="text/javascript" src="clock.js"></script>
+  <script src="https://unpkg.com/moment@2.22.2"></script>
+  <script src="https://momentjs.com/downloads/moment-timezone-with-data.min.js"></script>
+  <script type="text/javascript" src="clock.js"></script>
 
 </body>
+
 </html>
