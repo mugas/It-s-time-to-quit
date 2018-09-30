@@ -14,21 +14,12 @@ body {
   font-size: 2rem;
 }
 
-/*Time Zone*/
 .timeZone {
-  color: black;
-  position: absolute;
-  top: 13.5%;
-  left: 32.5%;
-  font-style: italic;
-  font-size: 1rem;
-  line-height: 32px;
-  box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.4);
+  font-size: 35%;
 }
 
 #city {
   color: red;
-  font-size: var(--font-size);
 }
 
 /* Digital Data */
