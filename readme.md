@@ -1,4 +1,4 @@
-## Clock and Time Zones
+## Clock and Time Zones - It's Time to Quit
 
 A clock made with <strong>JS</strong> and <strong>CSS</strong>.
 For the digital clock I worked with <em>momentjs</em>.
@@ -7,6 +7,7 @@ This was my third project, but the first one that was based on a tutorial. After
 In the middle of the project I learn about the library <em>momentjs</em> and also end up using it in the digital clock.
 
 This project made me want to try different things in javascript and learn more about it and also about libraries.
+When I was almost done with the project, the clock was a little bit rustic with no background and I was checking how it looked in my cellphone and had the idea of putting a cigar on the back with the clock waving and giving the title <em>It's Time to Quit</em>.
 
 
 In JS I worked and learn with:
