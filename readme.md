@@ -1,14 +1,36 @@
-## Clock and Time Zones - It's Time to Quit
+[![Social banner for mugas](./assets/time_banner.png)](http://ricardomoreira.io/)
+
+<h1 align="center"> 🔥Time to Quit</h1>
+
+<h2 align="center"> A digital and analogic clock</h2>
+
+### Index
+
+* [Name](#Name) 👈
+* [Links](#Links) 🔗
+* [Description](#Description) 📖
+* [Languages and Frameworks](####Languages-and-Frameworks) ⚙️
+* [Screenshots](#Screenshots) 📱
+* [Instalation](#Instalation) 🧩
+* [Support](#Support) 🆘
+* [Roadmap](#Roadmap) 🗺️
+* [Authors and acknowledgment](####Authors-and-acknowledgment) ✍️
+* [Project Status](#Project-Status) 📜
+
+# Name
+
+Time to quit
+
+# Links
+
+[Website](https://its-time-to-quit.netlify.app/)
+
+___
+
+# Description
 
 A clock made with <strong>JS</strong> and <strong>CSS</strong>.
 For the digital clock I worked with <em>momentjs</em>.
-
-This was my third project, but the first one that was based on a tutorial. After I done the tutorial from <strong>[Wes Bos( 30 days of Javascript)](https://javascript30.com/)</strong> - <em>CSS +JS clock</em> and because the use of time in JS was daunting for me I decided that I had to give it a go.
-In the middle of the project I learn about the library <em>momentjs</em> and also end up using it in the digital clock.
-
-This project made me want to try different things in javascript and learn more about it and also about libraries.
-When I was almost done with the project, the clock was a little bit rustic with no background and I was checking how it looked in my cellphone and had the idea of putting a cigar on the back with the clock waving and giving the title <em>It's Time to Quit</em>.
-
 
 In JS I worked and learn with:
 
@@ -29,5 +51,54 @@ In CSS I worked and learn with:
 <li>Libraries</li>
 </ul>
 
+___
 
+# Languages, Frameworks and others
 
+* **Javascript** - Language
+* **CSS** - Styling
+* **Momentjs** - Library
+
+____
+
+# Screenshots
+
+Home Page         |  Blog Page
+:-------------------------:|:-------------------------:
+![](assets/screenshot.png)  |  ![](assets/screenshot.png)
+
+____
+
+# Instalation
+
+___
+
+# Support
+
+Have any question or find something that doesn't look good? Let's talk 😊
+
+[Here](https://github.com/mugas)
+
+[And Here](https://www.ricardomoreira.io/about)
+
+____
+
+# Roadmap
+
+Nothing to add
+
+____
+
+# Authors-and-acknowledgment
+
+* [Based on this](https://javascript30.com/)
+
+* Me 😊
+
+____
+
+# Project-Status  
+
+Nothing to add
+
+____
